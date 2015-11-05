@@ -3,27 +3,27 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Second Post | Hexo</title>
+  <title>使用Hexo和Github搭建blog | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="#Markdown
-
-Q1
-Q2">
+  <meta name="description" content="初步准备注册github安装node.js在http://nodejs.org/download/ 下载安装node.js即可
+安装 Hexo1npm install -g hexo
+创建本地目录安装完成后，在自己喜欢的目录下（如F:\blog)，执行以下命令，即可以在该目录下初始化建立hexo所需的文件。1hexo init #执行init命令初始化hexo到你指定的目录
+安装依赖包1npm i">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Second Post">
+<meta property="og:title" content="使用Hexo和Github搭建blog">
 <meta property="og:url" content="http://yoursite.com/2015/11/05/Second-Post/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="#Markdown
-
-Q1
-Q2">
-<meta property="og:updated_time" content="2015-11-05T02:15:11.062Z">
+<meta property="og:description" content="初步准备注册github安装node.js在http://nodejs.org/download/ 下载安装node.js即可
+安装 Hexo1npm install -g hexo
+创建本地目录安装完成后，在自己喜欢的目录下（如F:\blog)，执行以下命令，即可以在该目录下初始化建立hexo所需的文件。1hexo init #执行init命令初始化hexo到你指定的目录
+安装依赖包1npm i">
+<meta property="og:updated_time" content="2015-11-05T03:16:52.496Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Second Post">
-<meta name="twitter:description" content="#Markdown
-
-Q1
-Q2">
+<meta name="twitter:title" content="使用Hexo和Github搭建blog">
+<meta name="twitter:description" content="初步准备注册github安装node.js在http://nodejs.org/download/ 下载安装node.js即可
+安装 Hexo1npm install -g hexo
+创建本地目录安装完成后，在自己喜欢的目录下（如F:\blog)，执行以下命令，即可以在该目录下初始化建立hexo所需的文件。1hexo init #执行init命令初始化hexo到你指定的目录
+安装依赖包1npm i">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -83,7 +83,7 @@ Q2">
         
   
     <h1 class="article-title" itemprop="name">
-      Second Post
+      使用Hexo和Github搭建blog
     </h1>
   
 
@@ -91,16 +91,27 @@ Q2">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#Markdown</p>
-<ol>
-<li>Q1</li>
-<li>Q2</li>
-</ol>
+        <h3 id="初步准备">初步准备</h3><h4 id="注册github">注册github</h4><h4 id="安装node-js">安装node.js</h4><p>在<a href="http://nodejs.org/download/" target="_blank" rel="external">http://nodejs.org/download/</a> 下载安装node.js即可</p>
+<h3 id="安装_Hexo">安装 Hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo</span><br></pre></td></tr></table></figure>
+<h3 id="创建本地目录">创建本地目录</h3><p>安装完成后，在自己喜欢的目录下（如F:\blog)，执行以下命令，即可以在该目录下初始化建立hexo所需的文件。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init <span class="comment">#执行init命令初始化hexo到你指定的目录</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="安装依赖包">安装依赖包</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install   <span class="comment">#-g表示全局安装, npm默认为当前项目安装</span></span><br></pre></td></tr></table></figure>
+<p>会在F:\blog目录下安装node_modules。</p>
+<h3 id="本地查看">本地查看</h3><p>执行以下命令生成静态页面：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure></p>
+<p>执行该命令，会在public\目录下生成一系列html,css等静态页面文件。<br>然后，启动服务器：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure></p>
+<p>至此，已经在本地搭建起了hexo博客。可以通过<a href="http://localhost/4000预览。" target="_blank" rel="external">http://localhost/4000预览。</a><br>根据提示， Ctrl+C可以停止Server。</p>
+<h3 id="添加新博文">添加新博文</h3><p>在F:\blog 下，执行hexo new添加一篇新博文：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">"New Post"</span>  <span class="comment">#新建标题为New Post的博文</span></span><br></pre></td></tr></table></figure></p>
+<p>该命令在Hexo\source_posts\ 目录下生成*.md文件，修改该文件实现新博文内容的修改。<br>刷新<a href="http://localhost/4000预览效果。" target="_blank" rel="external">http://localhost/4000预览效果。</a></p>
+<h3 id="部署至Github">部署至Github</h3><p>以上部署都是在本地进行，现在将博客部署到github上。打开本地_config.yml中，修改<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: http://hexo.io/docs/deployment.html</span></span><br><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>:</span><br></pre></td></tr></table></figure></p>
+<p>为<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: http://hexo.io/docs/deployment.html</span></span><br><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repository: git@github.com:[username_Github]/[username_Github].github.io.git  <span class="comment">#[username_Github]修改为自己的Github用户名</span></span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
+<h3 id="其他问题">其他问题</h3><h4 id="部署到Github时”Deployer_not_found:_git”">部署到Github时”Deployer not found: git”</h4><p>在执行 hexo deploy部署至Github时，如果出现<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ERROR Deployer not found: git</span><br></pre></td></tr></table></figure></p>
+<p>这是由于为安装部署工具，此时，只需执行：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
+<p>再执行 hexo deploy即可。</p>
+<h4 id="中文乱码的问题">中文乱码的问题</h4><p>md文件默认保存编码类型为NFSI，这样发布后，中文字符会出现乱码情况。此时，只需将md文件另存为“UTF-8”编码类型即可。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/11/05/Second-Post/" data-id="cigllr42n0002g8dhejk7w63n" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/11/05/Second-Post/" data-id="ciglnxxnk0002w8dhjm3rb5ab" class="article-share-link">Share</a>
       
       
     </footer>
@@ -146,7 +157,7 @@ Q2">
       <ul>
         
           <li>
-            <a href="/2015/11/05/Second-Post/">Second Post</a>
+            <a href="/2015/11/05/Second-Post/">使用Hexo和Github搭建blog</a>
           </li>
         
           <li>
